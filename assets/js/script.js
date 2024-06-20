@@ -53,5 +53,42 @@ console.log(moto)
 const vida = "Munhoz"
 console.log(vida)
 /*modificação da const abaixo*/
-vida = "Rufino"
-console.log(vida)
+/*vida = "Rufino"
+console.log(vida)*/
+
+//AULA 11 - Operaçãoes e variáveis
+let x = 1
+x = x + 8
+console.log(x)
+
+let pessoa = "Munhoz"
+calculo = pessoa + 8
+console.log(calculo)
+
+let marca = "Toyota" //posso inserir um espaço após o nome para melhor exibir.
+let modelo = "Coroloa" //posso inserir um espaço após o nome para melhor exibir.
+carro = marca + modelo
+console.log(carro)
+
+let marca1 = "Fiat" //posso inserir um espaço após o nome para melhor exibir.
+let modelo1 = "Pálio" //posso inserir um espaço após o nome para melhor exibir.
+carro = marca1 + " " + modelo1
+console.log("Nome: " + carro)
+
+let n1 = 15;
+let n2 = 20;
+let soma = n1 + n2;
+console.log(soma)
+
+let n4 = 15;
+let n5 = 20;
+let n6 = 2;
+let soma1 = (n4 * n6) + n5;
+console.log(soma1)
+
+//AULA 12 - String e Template String
+
+let nome2 = "Munhoz"
+let nome3 = "Rufino"
+let nomesobrenome = `Nome e sobrenome: ${nome2 + `bla`} ${nome3} filho` //utiliza-se de acentos agudos para tamplate string
+console.log(nomesobrenome)
