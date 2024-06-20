@@ -192,4 +192,39 @@ if (preco <= 45) {
     console.log("A carne esta cara")
 }
 
-//AULA 18 - 
+//AULA 18 - Condicional Ternário 
+//Nada mais é que um if em uma linha só.
+
+let isMember = false;
+
+let shipping = isMember ? 2 : 10;
+//? deu certo é 2, você é membro
+//: deu errado é 10, você não é membro
+
+console.log(isMember ? "Você é membro" : "Você não é membro");
+console.log("Frete: " + shipping)
+
+let age = 18;
+let isAdult = ((age >= 18 && age < 60) ? "Sim é um adulto" : "Não é um adulto")
+console.log(isAdult)
+
+//AULA 19 - Switch
+
+let profission = "corredor"
+
+console.log("Profissão: " + profission)
+
+switch (profission) {
+    case "fiscal":
+        console.log("Sua camisa e verde");
+        break;
+    case "bombeiro":
+        console.log("Sua camisa é vermelha");
+        break;
+    case "policial":
+        console.log("Sua camisa é azul");
+        break;
+    default:
+        console.log("Você não tem camisa");
+        break;
+}
