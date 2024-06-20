@@ -92,3 +92,104 @@ let nome2 = "Munhoz"
 let nome3 = "Rufino"
 let nomesobrenome = `Nome e sobrenome: ${nome2 + `bla`} ${nome3} filho` //utiliza-se de acentos agudos para tamplate string
 console.log(nomesobrenome)
+
+//AULA 13 - Condicional if / else
+
+let idade1 = 17
+
+if (idade1 >= 18) {
+    console.log("Você é MAIOR de idade")
+} else {
+    console.log("Você é MENOR de idade")
+}
+
+//AULA 14 - Condicional == e ===
+
+let idade3 = 20;
+
+if (idade3 === 20) {
+    console.log("Você tem 20 anos")
+} else {
+    console.log ("Você não tem essa idade")
+}
+
+let idade4 = "30"; //o numero como string contatena ao resultado
+
+if (idade4 == 30) { //== considera mesmo uma sring como resultado (busca mais aberta)
+    idade4 = idade4 + 25;
+    console.log("Idade adicionada com sucesso")
+    console.log(idade4);
+}
+
+let idade5 = 30; //com o numeral pode ser somado
+
+if (idade5 === 30) { //=== exige da variável o valor exato numeral (busca mais direcionada)
+    idade5 = idade5 + 25;
+    console.log("Idade adicionada com sucesso")
+    console.log(idade5);
+}
+
+//AULA 15 - Multi-condicionais (&& e ||)
+//AULA 16 - Condicional Dupla (if else)
+
+//&&, simblo de "and" ou "e" - todas as condicionais tém que estar corretas
+//||, simbolo de "or" ou "ou" - basta uma condicional ser correta que já entra
+
+let idade6 = 60;
+/*
+if (idade6 >= 18) {
+    if (idade6 < 60) {
+    console.log("Você é um adulto")
+    }
+}
+Obs: esta linha de código pode ser escrita logo abaixo de forma reduzida 
+*/ 
+
+if (idade6 < 18) {
+    console.log("Você é uma criança")
+} else if (idade6 >= 18 && idade6 < 60) {
+    console.log("Você é um adulto");
+} else if (idade6 >= 60) {
+    console.log("Você é um idoso")
+} 
+
+//else if, uma condicional dupla que filtra as etapas de informação, caso atendido não prossegue com a avaliação, evitando possíveis erros. 
+
+//AULA 17 - Desmistificando o IF
+// o if tem uma caracteristica de verificação de verdadeiro ou falso
+let peso = 81;
+
+let verificacao = peso >= 80;
+
+if (verificacao) {
+    console.log("Acima do peso")
+} else {
+    console.log("Peso esta na média")
+}
+
+//AULA 18 - Exercício de condicional #2
+
+//Substitua o @ pela condicional correta para que o resultado seja TRUE
+let z = 10;
+let y = 5;
+console.log(z > y);
+
+//Substitua o @ pela condicional correta para que o resultado seja FALSE
+let c = "10";
+let d = 5;
+console.log(c === d);
+
+//Substitua o @ pela condicional correta para que o resultado seja FALSE
+let e = 10;
+let f = 5;
+console.log(e != f);
+
+//Crie uma condicional para verificar se o preço da carne está barato ou caro. PS: até 45 está barato.
+let preco = 46.3;
+if (preco <= 45) {
+    console.log("A carne esta barata")
+} else {
+    console.log("A carne esta cara")
+}
+
+//AULA 18 - 
