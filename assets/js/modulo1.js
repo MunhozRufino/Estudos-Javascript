@@ -2,7 +2,8 @@ alert ("Olá Mundo")
 
 console.log("nome")
 
-let idade = 90 //number
+//EXEMPLOS DE VARIÁVEIS
+let idade = 90 //number 
 let nome = "Munhoz" //string
 let logado = true //boolean
 let lista = ["ovo", "massa", "corante"] //array
