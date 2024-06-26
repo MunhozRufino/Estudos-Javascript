@@ -253,4 +253,65 @@ console.log(carros);
 console.log(`4. Itens no array: `);
 console.log(carros.length); 
 
+//AULA 16 - O que são objetos? Um grupo de informações diferente de um array que são listas.
 
+let avatar = { //aqui estamos criando dentro da variável um objeto.
+    nome: `Munhoz`,
+    idade: 32,
+    pais: `Brasil`,
+    olhos: [`preto`, `castanho`], //arrey
+    caracteristica: { //objeto dentro de objetos
+        forca: 10,
+        energia: 15,
+        magia: 5
+    }
+} //fim do objeto contendo propriedades com string, number, array
+
+//AULA 17 - Acessando e alterando objetos
+avatar.nome = `Rufino`;
+avatar.caracteristica.forca += 5;
+avatar.olhos.push(`verde`);
+
+console.log(avatar);
+
+console.log(`Bem vindo ${avatar.nome} você tem ${avatar.idade} anos.`);
+console.log(avatar.caracteristica.forca); //aqui acessamos os objetos em efeito cascata. 
+console.log(avatar.olhos[1]); //relembrando como acessamos os arrays
+
+//AULA 17 - Acessando e alterando objetos (testamos acima a ideia de alteração)
+let veiculos = {
+    nome: `Vendedor`,
+    idade: 40,
+    modeloCarros: [
+        {modelo: `Fiat`, cor: `preto`},
+        {modelo: `Ferrari`, cor: `vermelho`}
+    ]
+}
+
+veiculos.idade -= 5;
+veiculos.modeloCarros[1].modelo = `Toyota`; //praticando a alteração
+
+console.log(veiculos);
+console.log(`Este é o modelo: ${veiculos.modeloCarros[1].modelo}`);
+
+//AULA 18 - Função dentro de objeto
+
+let humano = {
+    nome: `João`,
+    sobrenome: `Carlos`,
+    idade: 20,
+    humanoCompleto: function() {
+        return `${this.nome} ${this.sobrenome}`;
+        //return this.nome + ` ` + this.sobrenome; pode ser feito desta forma também o return.
+    }
+}
+
+console.log(humano.nome + ` ` + humano.sobrenome);
+console.log(humano.humanoCompleto());
+
+//AULA 19 - O loop for
+
+for (let lo = 0; lo < 10; lo++) {
+    console.log(lo);
+    console.log(`Frase qualquer `+ lo);
+}
