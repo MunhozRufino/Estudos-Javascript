@@ -315,3 +315,81 @@ for (let lo = 0; lo < 10; lo++) {
     console.log(lo);
     console.log(`Frase qualquer `+ lo);
 }
+
+//AULA 20 - Dando loop em arrays
+
+//Esta é uma forma de apresentar o código de loop
+let cores = [`preto`, `branco`, `azul`, `verde`];
+
+cores.push(`roxo`);
+
+for (let cr = 0; cr < cores.length; cr++) {
+    console.log(cores[cr]);
+}
+
+//Aqui a baixo podemos observar uma estrutura de for mais simples e bem efetiva
+let frutas = [`maçã`, `melancia`, `mamão`, `morango`];
+
+frutas.push(`ABACAXI`);
+
+console.log(`Lista de frutas: `);
+
+for (let fr in frutas) {
+    console.log(frutas[fr]);
+}
+
+//Podemos simplificar ainda mais com a estrutura abaixo do for
+let receita = [`agua`, `farinha`, `cenoura`, `fermento`];
+
+receita.push(`MANTEIGA`);
+
+console.log(`Receita de Bolo: `);
+
+for (let rec of receita) {
+    console.log(rec);
+}
+
+//Podemos criar loops dentro do array com objetos
+let escolar = [
+    {mat: `lapis`, val: 10},
+    {mat: `borracha`, val: 5},
+    {mat: `caderno`, val: 15},
+    {mat: `fermento`, val: 25}
+];
+
+console.log(`Material escolar: `);
+
+for (let mt in escolar) {
+    console.log(escolar[mt]);
+}
+
+//AULA 21 - O loop while 
+
+//abaixo exibimos duas maneiras que podemos apresentar o while em códigos diferentes
+let numero = 0;
+while (numero <= 10) {
+    console.log(`O número de vez é ${numero}`);
+    numero++;
+}
+
+for(let numero = 0; numero <= 10; numero++) {
+    console.log(`Os novos números são ${numero}`);
+}
+
+//AULA 22 - Exercício de loops #8
+
+//1. Faça um loop que mostre todas as frutas
+let salada = [`Maça`, `Uva`, `Banana`];
+
+for (let sl in salada) {
+    console.log(salada[sl]);
+}
+
+//2. Conte de 1 até 100 através de um While
+let numb = 0;
+while (numero <= 100) {
+    console.log(`Contagem progressiva: ${numero}`);
+    numero++;
+}
+
+
