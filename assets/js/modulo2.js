@@ -227,6 +227,10 @@ ingredientes.push(`cebola`); //push adiciona no array um item.
 
 ingredientes.shift(); //remove o primeiro item `ovo`
 ingredientes.pop(); //remove o ultimo item `cebola`
+ingredientes[1] = `tempero`; //uma forma de susbstituir um item do array
+ingredientes[ingredientes.length - 1] = `cacau`; //segunda forma de substituir um item do array utilizando a contagem de itens menso um para substituir o ultmo item do array.
+console.log(ingredientes.join(` -> `)); //gera uma string separando cada array (não altera o array).
+
 
 console.log(ingredientes);
 
@@ -392,4 +396,47 @@ while (numero <= 100) {
     numero++;
 }
 
+//AULA 23 - Funções de array (as intruções desta aula foram aplicadas na aula 14)
 
+//AULA 24 - Ordenação de array
+
+let fruits = [`melancia`, `abacaxi`, `tangerina`, `banana`];
+
+fruits.sort(); //coloca os itens do array em ordem alfabética
+fruits.reverse(); //coloca os itens em ordem decrescente (reversa)
+
+console.log(fruits);
+
+let cars = [
+    {brand: `toyota`, year: 2010},
+    {brand: `bmw`, year: 1998},
+    {brand: `fiat`, year: 2002}
+]
+
+cars.sort((a, b) => b.year - a.year);
+
+console.log(cars);
+
+//AULA 25 - Iteração de array 1
+
+let work = [`Vendedor`, `Diretor`, `Gerente`, `Atendente`];
+
+let workLeader = work.filter((value) => {
+    return value.length <= 7;
+
+/* Abaixo é uma forma de se fazer o código acima: 
+    if(item.length > 7) {
+        return true;
+    } else {
+        return false;
+    }
+*/
+})
+console.log(workLeader);
+
+//a função includes procura um item dentro do array como `Diretor`
+if(work.includes(`Diretor`)) {
+    console.log(`O Diretor estar na emrpesa!`);
+} else {
+    console.log(`Não tem dono na empresa!`);
+}
