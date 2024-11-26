@@ -1,11 +1,11 @@
 //AULA 02 e 03 - Declarando uma função e usar uma função
 
 function gravidade () {
-    console.log("Essa é a gravidade: ");
-    console.log(9.8);
-}//as funções não aparecem no console, apenas estão presentes para exercer alguma função. 
+    console.log("Essa é a gravidade: "); //não é exibido no console. 
+    console.log(9.8); //não é exibido no console. 
+}//as funções não aparecem no console, apenas estão presentes para exercer alguma função. CRIAÇÂO DO MOTOR
 
-gravidade(); //aqui evidenciamos a utilização da função.
+gravidade(); //USO EFETIVO DO MOTOR: aqui evidenciamos a utilização da função.
 
 //AULA 04 - Passando parâmetros em funções
 

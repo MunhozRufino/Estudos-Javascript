@@ -68,7 +68,7 @@ console.log(calculo)
 
 let marca = "Toyota" //posso inserir um espaço após o nome para melhor exibir.
 let modelo = "Coroloa" //posso inserir um espaço após o nome para melhor exibir.
-carro = marca + modelo
+carro = marca + " " + modelo
 console.log(carro)
 
 let marca1 = "Fiat" //posso inserir um espaço após o nome para melhor exibir.
